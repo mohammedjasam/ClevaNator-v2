@@ -1,0 +1,26 @@
+<annotation>
+	<folder>guns</folder>
+	<filename>g2.jpg</filename>
+	<path>/home/paperspace/Desktop/images/guns/g2.jpg</path>
+	<source>
+		<database>Unknown</database>
+	</source>
+	<size>
+		<width>275</width>
+		<height>183</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>gun</name>
+		<pose>Unspecified</pose>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>143</xmin>
+			<ymin>16</ymin>
+			<xmax>230</xmax>
+			<ymax>60</ymax>
+		</bndbox>
+	</object>
+</annotation>
