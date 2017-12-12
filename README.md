@@ -22,3 +22,5 @@ This project is the iteration of the earlier project, it focuses on Object Detec
 
 - Weights:
 > Download the ssd_mobilenet_v1_coco_<timestamp>.tar.gz weight from https://github.com/tensorflow/models/blob/master/research/object_detection/g3doc/detection_model_zoo.md
+
+- Edit the object_detection.pbtxt in trainig with your labels
