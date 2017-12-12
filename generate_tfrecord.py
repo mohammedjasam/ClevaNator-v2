@@ -2,10 +2,10 @@
 Usage:
   # From tensorflow/models/
   # Create train data:
-  python generate_tfrecord.py --csv_input=data/train_labels.csv  --output_path=train.record
+  python3 generate_tfrecord.py --csv_input=data/train_labels.csv  --output_path=data/train.record
 
   # Create test data:
-  python generate_tfrecord.py --csv_input=data/test_labels.csv  --output_path=test.record
+  python3 generate_tfrecord.py --csv_input=data/test_labels.csv  --output_path=data/test.record
 """
 from __future__ import division
 from __future__ import print_function
@@ -17,7 +17,7 @@ import pandas as pd
 import tensorflow as tf
 
 from PIL import Image
-from object_detection.utils import dataset_util
+from models.research.object_detection.utils import dataset_util
 from collections import namedtuple, OrderedDict
 
 flags = tf.app.flags
@@ -30,8 +30,6 @@ FLAGS = flags.FLAGS
 def class_text_to_int(row_label):
     if row_label == 'gun':
         return 1
-    elif row_lable == 'knife':
-        return 2
     else:
         None
 
@@ -85,7 +83,7 @@ def create_tf_example(group, path):
 
 def main(_):
     writer = tf.python_io.TFRecordWriter(FLAGS.output_path)
-    path = os.path.join(os.getcwd(), 'images')
+    path = os.path.join(os.getcwd(), 'images/test')
     examples = pd.read_csv(FLAGS.csv_input)
     grouped = split(examples, 'filename')
     for group in grouped:
