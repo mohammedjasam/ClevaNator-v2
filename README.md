@@ -57,6 +57,6 @@ This project is the iteration of the earlier project, it focuses on Object Detec
 - Now that you have the frames, execute the command
 ```
  python -m tensorflow-for-poets-2.scripts.label_image
-  --graph=tf_files/retrained_graph.pb
-  --image=path to /ClevaNator-v2/violent_predictor/TestData/test/
+ --graph=tf_files/retrained_graph.pb
+ --image=path to /ClevaNator-v2/violent_predictor/TestData/test/
 ```
