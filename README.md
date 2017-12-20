@@ -20,8 +20,8 @@ This project is the iteration of the earlier project, it focuses on Object Detec
 - The model can be custom trained with your own set of classes; to do this, first gather the image dataset and place them in a folder named trainData and place that folder in ClevaNator-v2/violent_predictor/tf_files
 - After placing the dataset in the right folder, execute the following command
 > python35 -m tensorflow-for-poets-2.scripts.retrain
-  --bottleneck_dir=tf_files/bottlenecks
-  --how_many_training_steps=5000
+  --bottleneck_dir=tf_files/bottlenecks \n
+  --how_many_training_steps=5000 \n
   --model_dir=tf_files/models/
   --summaries_dir=tf_files/training_summaries/"mobilenet_0.50_224"
   --output_graph=tf_files/retrained_graph.pb
