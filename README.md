@@ -15,6 +15,8 @@ This project is the iteration of the earlier project, it focuses on Object Detec
 - Type pip install tensorflow
 - This command should download all the necessary packages to successfully install tensorflow on your system.
 
+> Name your python as python35 to follow the commands directly, else change the commands to whatever your python is named as!
+
 ## Execution
 ### Training the Model:
 - The model can be custom trained with your own set of classes; to do this, first gather the image dataset and place them in a folder named trainData and place that folder in ClevaNator-v2/violent_predictor/tf_files
