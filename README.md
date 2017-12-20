@@ -37,9 +37,11 @@ This project is the iteration of the earlier project, it focuses on Object Detec
 - Record the necessary video and press q to quit the webcam recording.
 - This will record the video and generate frames in the folder generated_frames
 - Now that you have the frames, execute the command
-> ```python -m tensorflow-for-poets-2.scripts.label_image
+  python -m tensorflow-for-poets-2.scripts.label_image
+
   --graph=tf_files/retrained_graph.pb
-  --image=path to /ClevaNatorv2/violent_predictor/Video_Logger/generated_frames/```
+
+  --image=path to /ClevaNatorv2/violent_predictor/Video_Logger/generated_frames/
 
 ### Predicting output from frames generated from a video:
 - Navigate to ClevaNator-v2/violent_predictor/TestData
